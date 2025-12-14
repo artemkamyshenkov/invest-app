@@ -2,7 +2,15 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@workspace/ui/*": ["./src/*"],
+      "@workspace/ui/components/*": ["./src/components/*"],
+      "@workspace/ui/lib/*": ["./src/lib/*"],
+      "@workspace/ui/hooks/*": ["./src/hooks/*"]
+    }
   },
   "include": ["src"]
 }
