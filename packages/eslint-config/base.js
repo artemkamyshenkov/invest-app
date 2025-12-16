@@ -19,11 +19,18 @@ export const config = [
     },
     rules: {
       'turbo/no-undeclared-env-vars': 'warn',
+      'no-unused-vars': 'off', // Отключаем стандартное правило в пользу TypeScript версии
     },
   },
   {
     plugins: {
       onlyWarn,
+    },
+  },
+  {
+    rules: {
+      // Переопределяем onlyWarn для неиспользуемых переменных
+      '@typescript-eslint/no-unused-vars': 'error',
     },
   },
   {

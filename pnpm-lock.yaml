@@ -117,6 +117,8 @@ importers:
 
   packages/shared: {}
 
+  packages/ts-config: {}
+
   packages/ui:
     dependencies:
       '@radix-ui/react-slot':
