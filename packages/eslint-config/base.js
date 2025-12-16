@@ -1,6 +1,6 @@
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
-import onlyWarn from 'eslint-plugin-only-warn';
+// import onlyWarn from 'eslint-plugin-only-warn'; // Временно отключен для проверки правила no-unused-vars
 import turboPlugin from 'eslint-plugin-turbo';
 import tseslint from 'typescript-eslint';
 
@@ -19,17 +19,7 @@ export const config = [
     },
     rules: {
       'turbo/no-undeclared-env-vars': 'warn',
-      'no-unused-vars': 'off', // Отключаем стандартное правило в пользу TypeScript версии
-    },
-  },
-  {
-    plugins: {
-      onlyWarn,
-    },
-  },
-  {
-    rules: {
-      // Переопределяем onlyWarn для неиспользуемых переменных
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': 'error',
     },
   },

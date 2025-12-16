@@ -17,7 +17,6 @@ export const nextJsConfig = [
   ...baseConfig,
   js.configs.recommended,
   eslintConfigPrettier,
-  ...tseslint.configs.recommended,
   {
     ...pluginReact.configs.flat.recommended,
     languageOptions: {
@@ -47,5 +46,35 @@ export const nextJsConfig = [
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
     },
+  },
+  {
+    rules: {
+      // Переопределяем все предыдущие настройки - должно быть в самом конце
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+        },
+      ],
+      // Переопределяем react-hooks правила, чтобы они были error, а не warn
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'error',
+      'react/jsx-uses-react': 'off',
+      'react/react-in-jsx-scope': 'off',
+    },
+  },
+  {
+    ignores: [
+      '.next/**',
+      'node_modules/**',
+      'dist/**',
+      'build/**',
+      '.turbo/**',
+      'coverage/**',
+      '*.config.js',
+      '*.config.mjs',
+      '*.config.ts',
+    ],
   },
 ];
