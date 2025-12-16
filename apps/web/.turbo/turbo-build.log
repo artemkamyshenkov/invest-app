@@ -6,15 +6,15 @@
    [1m[38;2;173;127;168m▲ Next.js 16.0.8[39m[22m (Turbopack)
 
  [37m[1m [22m[39m Creating an optimized production build ...
- [32m[1m✓[22m[39m Compiled successfully in 1260.3ms
+ [32m[1m✓[22m[39m Compiled successfully in 1361.9ms
 [?25l [37m[1m [22m[39m Running TypeScript  [36m.[39m [33m[1m⚠[22m[39m TypeScript project references are not fully supported. Attempting to build in incremental mode.
-[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G[?25h[?25l [37m[1m [22m[39m Finished TypeScript in 1015.8ms  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finished TypeScript in 1015.8ms     [32m[1m✓[22m[39m Finished TypeScript in 1015.8ms 
+[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G[?25h[?25l [37m[1m [22m[39m Finished TypeScript in 1008.3ms  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finished TypeScript in 1008.3ms     [32m[1m✓[22m[39m Finished TypeScript in 1008.3ms 
 [?25l [37m[1m [22m[39m Collecting page data using 9 workers  [36m.[39m[33m777[39m
 [33m777[39m
-[2K[1G[?25h [37m[1m [22m[39m Collecting page data using 9 workers in 179.5ms     [32m[1m✓[22m[39m Collecting page data using 9 workers in 179.5ms 
-[?25l [37m[1m [22m[39m Generating static pages using 9 workers (0/4)  [36m[    ][39m[2K[1G[?25h[33m777[39m
-[?25h [32m[1m✓[22m[39m Generating static pages using 9 workers (4/4) in 223.0ms
-[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization in 5.3ms     [32m[1m✓[22m[39m Finalizing page optimization in 5.3ms 
+[2K[1G[?25h [37m[1m [22m[39m Collecting page data using 9 workers in 187.6ms     [32m[1m✓[22m[39m Collecting page data using 9 workers in 187.6ms 
+[?25l [37m[1m [22m[39m Generating static pages using 9 workers (0/4)  [36m[    ][39m[2K[1G [37m[1m [22m[39m Generating static pages using 9 workers (0/4)  [36m[=   ][39m[2K[1G[?25h[33m777[39m
+[?25h [32m[1m✓[22m[39m Generating static pages using 9 workers (4/4) in 234.1ms
+[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization in 5.6ms     [32m[1m✓[22m[39m Finalizing page optimization in 5.6ms 
 
 [4mRoute (app)[24m
 ┌ ○ /
