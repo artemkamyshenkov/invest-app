@@ -6,3 +6,5 @@ node_modules
 .turbo
 *.tsbuildinfo
 .vscode
+.env.*
+.DS_Store
