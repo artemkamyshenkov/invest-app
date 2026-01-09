@@ -7,13 +7,18 @@
     "dev": "turbo dev",
     "build": "turbo build",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "prepare": "husky install",
+    "prepush": "turbo run lint --affected",
+    "lint:staged": "pnpm dlx eslint --fix --max-warnings=0"
   },
   "keywords": [],
   "author": "Artem Kamyshenkov <artmiller22831@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/node": "^24.10.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.4.2",
     "turbo": "^2.6.3",
     "typescript": "^5.9.3"
@@ -21,5 +26,14 @@
   "packageManager": "pnpm@10.9.0",
   "engines": {
     "node": ">=22.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "prettier --write",
+      "pnpm dlx eslint --fix --max-warnings=0"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
   }
 }
