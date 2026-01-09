@@ -2,4 +2,5 @@
 export * from './lib/utils';
 
 // Export components
-export { Button, buttonVariants, type ButtonProps } from './components/button';
+export { Button, buttonVariants } from './components/button';
+export { Input } from './components/input';
