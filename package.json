@@ -9,7 +9,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky install",
-    "prepush": "turbo run lint --affected"
+    "prepush": "turbo run lint --affected",
+    "lint:staged": "pnpm dlx eslint --fix --max-warnings=0"
   },
   "keywords": [],
   "author": "Artem Kamyshenkov <artmiller22831@gmail.com>",
@@ -29,7 +30,7 @@
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "prettier --write",
-      "eslint --fix --max-warnings=0"
+      "pnpm dlx eslint --fix --max-warnings=0"
     ],
     "*.{json,md,yml,yaml}": [
       "prettier --write"

@@ -10,7 +10,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@shared": "workspace:*",
     "@workspace/ui": "workspace:*",
     "lucide-react": "^0.468.0",
     "next": "16.0.8",
