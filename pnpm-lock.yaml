@@ -29,9 +29,6 @@ importers:
 
   apps/web:
     dependencies:
-      '@shared':
-        specifier: workspace:*
-        version: link:../../packages/shared
       '@workspace/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -129,8 +126,6 @@ importers:
       typescript-eslint:
         specifier: ^8.44.1
         version: 8.49.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
-
-  packages/shared: {}
 
   packages/ts-config: {}
 
