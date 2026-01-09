@@ -22,6 +22,9 @@
     "lucide-react": "^0.468.0",
     "tailwind-merge": "^3.4.0"
   },
+  "scripts": {
+    "lint": "eslint"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0",
     "@types/react": "^19",
